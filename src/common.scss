@@ -1,0 +1,56 @@
+.keep-center{
+    display: flex;
+    justify-content: center;
+}
+
+.padding-50{
+    padding: 40px;
+}
+
+.MuiTab-textColorSecondary.Mui-selected{
+    color: #ed5a2e !important;
+}
+.PrivateTabIndicator-colorSecondary-122{
+    background-color: #ed5a2e !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer-text-wrap {
+        display: flex !important;
+        justify-content: center !important;
+        h6:nth-child(1){
+        display: none !important;
+        background: red;
+    }
+    h6:nth-child(2){
+        text-align: center;
+        // position: unset !important;
+        right: unset !important;
+    }
+    }
+}
+
+.footer-text-wrap {
+    h6{
+        &:nth-child(1){
+            font-size: 16px !important;
+        }
+        &:nth-child(2){
+            right: 20px ;
+            font-size: 16px ;
+            position: absolute ;
+            .credit-person{
+                text-Decoration:none !important;
+                color: #ffffff !important;
+            }
+            .credit-person:hover{
+                color: #ffa442 !important;
+            }
+        }
+   
+    svg{
+        font-size: 1rem;
+    }
+}
+}
+

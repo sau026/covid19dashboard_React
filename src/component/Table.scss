@@ -1,0 +1,139 @@
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border-radius: 12px;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background: radial-gradient(rgb(252, 145, 11), rgb(230, 61, 58));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    h2{
+        font-size: 20px;
+    margin: 0;
+    letter-spacing: 0px;
+    }
+  }
+  
+  .modal-body {padding: 40px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    h3{
+        margin: 0;
+    }
+  }
+
+  .cc-box{
+    border-radius: 5px;
+    padding: 20px 20px;
+    border: 1px solid #eb5231;
+    color: #eb5231;
+    display: flex;
+    justify-content: space-between;
+    span{
+      &:nth-child(1){
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    span{
+      &:nth-child(2){
+        font-size: 20px;
+    font-weight: 400;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .modal-content{
+      width: 90%;
+    }
+    #stateList{
+      border: 1px solid #726560 !important;
+    }
+    .parent-filter-box{
+      flex-direction: column !important;
+    }
+    .inner-filter-box{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 15px;
+      padding-right: 10px;
+      select{
+        width: inherit;
+       max-width: 75%;
+       margin-right: 10px !important;
+      }  
+      span{
+        margin-left: 10px;
+      }
+    }
+  }
